@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Expense Splitter</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <h1>Travel Expense Splitter</h1>
+        <form id="expense-form">
+            <div class="form-group">
+                <label for="expense">Enter total expense:</label>
+                <input type="number" id="expense" placeholder="Enter total amount" required>
+            </div>
+
+            <div class="form-group">
+                <label for="from-currency">Currency of expense:</label>
+                <select id="from-currency">
+                    <option value="USD">USD</option>
+                    <option value="EUR">EUR</option>
+                    <option value="GBP">GBP</option>
+                    <option value="INR">INR</option>
+                    <option value="BDT">BDT (Bangladeshi Taka)</option>
+
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="people">Number of people:</label>
+                <input type="number" id="people" placeholder="Enter number of people" required>
+            </div>
+
+            <div class="form-group">
+                <label for="to-currency">Convert to currency:</label>
+                <select id="to-currency">
+                    <option value="USD">USD</option>
+                    <option value="EUR">EUR</option>
+                    <option value="GBP">GBP</option>
+                    <option value="INR">INR</option>
+                    <option value="BDT">BDT (Bangladeshi Taka)</option> 
+
+                </select>
+            </div>
+
+            <button type="button" onclick="splitExpense()">Split Expense</button>
+        </form>
+
+        <div id="result"></div>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
+
+<!-- if r u using this then please dont forget to gimme credit, 
+ i m a small learner and a devp your credit give me encoruge  -->
